@@ -1,3 +1,4 @@
+# Lab 1
 ## No Arguments
 ![Image](cd_no_arg.jpg)\
 The command was run in the `home` directory with no output. Additionally, the working directory did not change because I did not specify a directory to change into. An error did not occur since the command is equivalent to `cd .`, which just changes directory into the working directory.\

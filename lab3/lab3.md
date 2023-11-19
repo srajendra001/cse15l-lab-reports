@@ -40,24 +40,32 @@ static void reverseInPlace(int[] arr) {
 ```
 The change fixes the issue because it makes it so two elements are being swapped rather than one element being changed to another element. Additionally, the loop only goes through half of the array since swapping while iterating through the second half of the array would just return it back to its original state.
 ## Part 2
-`grep -i` Examples:\
+### `grep -i` Examples:
+`grep -i "UNEsco" technical/plos/journal.pbio.0020001.txt`:\
 ![grep -i Example 1](grep%20-i%201.png)\
-The command is searching for instances of the string "UNEsco" in each line while ignoring case. The only lines returned show the string "UNESCO", which only match the string being looked for when ignoring case.
+The command is searching for instances of the string "UNEsco" in each line while ignoring case. The only lines returned show the string "UNESCO", which only match the string being looked for when ignoring case.\
+`grep -i "es CELL" technical/biomed/1471-213X-1-10.txt`:\
 ![grep -i Example 2](grep%20-i%202.png)\
-The command is searching for instances of the string "es CELL" while ignoring case. All the lines returned contained the string "ES cell", showing how case was ignored.\
-`grep -c` Examples:\
+The command is searching for instances of the string "es CELL" while ignoring case. All the lines returned contained the string "ES cell", showing how case was ignored.
+### `grep -c` Examples:
+`grep -c "A-GVHD" technical/biomed/1471-230X-3-5.txt`:\
 ![grep -c Example 1](grep%20-c%201.png)\
 The command is counting every line that contains the string "A-GVHD", where it shows there were 52 lines that contained the string. This command does not return the number of times the string appears.\
+`grep -c "the" technical/plos/*.txt`:\
 ![grep -c Example 2](grep%20-c%202.png)\
-The command is counting every line that contains the string "the" in every .txt file in the `plos` directory. It shows the count for every file in a list.\
-`grep -w` Examples:\
+The command is counting every line that contains the string "the" in every .txt file in the `plos` directory. It shows the count for every file in a list.
+### `grep -w` Examples:
+`grep -w "class" technical/biomed/1471-213X-3-2.txt`:\
 ![grep -w Example 1](grep%20-%20w%201.png)\
 The command only returns lines that contain the word "class" rather than any lines that may contain the string "class" as a substring. There was an instance of the word "classes" that was ignored.\
+`grep -w "path" technical/911report/chapter-12.txt`:\
 ![grep -w Example 2](grep%20-w%202.png)\
-The command searches for lines that contain the string "path" that is not a substring. There were instances of the word sympathetic that were ignored.\
-`grep -o` Examples:\
+The command searches for lines that contain the string "path" that is not a substring. There were instances of the word sympathetic that were ignored.
+### `grep -o` Examples:
+`grep -o "and" technical/government/About_LSC/LegalServCorp_v_VelazquezDissent.txt`:\
 ![grep -o Example 1](grep%20-o%201.png)\
 The command lists every instance of the string "and" while ignoring the rest of the line.\
+`grep -o "was" technical/governemnt/Media/Anthem_Payout.txt`:\
 ![grep -o Example 2](grep%20-o%202.png)\
 The command lists every instance of the string "Was" while ignoring the rest of the line.\
 All of the commands used were found at this [link](https://www.geeksforgeeks.org/grep-command-in-unixlinux/).

@@ -6,7 +6,7 @@ The keys pressed for this command were `git clone <ctrl+v><enter>`. This command
 ![Step 6](step6.PNG)\
 The keys pressed for this command were `bash t<tab><enter>`, which ran the tests. Using the `<tab>` button autocompleted the t character to `test.sh`.\
 ![Step 7](step7.PNG)\
-The keys pressed for this command were `vim L<tab>.<tab><enter>`, `?index1<enter>`, and `er2:wq<enter>`. This set of commands opened the `ListExamples.java` file in vim, searched for the last instance of `index1`, moved the cursor to the last character in the word and replaced it with a 2, and finally saved and exited from vim.\
+The keys pressed for this set of commands were `vim L<tab>.<tab><enter>`, `?index1<enter>`, and `er2:wq<enter>`. The first command opened the `ListExamples.java` file in vim. The second command searched for the last instance of `index1`, which happened to be the one that needed to be changed. This put the cursor at the first character of the last `index1`. The next step moved the cursor to the last character in `index1`  and replaced it with a 2 to fix the error. Finally the file was saved and vim was exited.\
 ![Step 8](step8.PNG)\
 The keys pressed for this command were `<up><up><enter>`. Doing this finds the bash history 2 lines up, which was `bash test.sh`, and runs the tests.\
 ![Step 9](step9.PNG)\

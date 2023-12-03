@@ -5,7 +5,7 @@
   ![test functions](test.png)
 2) **TA**: It seems like you're on the right track. Maybe try stopping in the `merge` function and see what's going on using jdb. Also write out what you think should be happening before running the debugger so you can see exactly where the issue is.\
 3) **Student**: I noticed that once I completed adding all the elements of `list1`, there was an issue with how I was adding the remaining elements from `list2`. In the debugger I noticed that the `index2` variable wasn't being updated correctly. Additonally, the program kept adding the second element in `list2` to the `result` array since `index2` wasn't being incremented.\
-   ![debugging](debug.png)
+   ![debugging](debug.png)\
 4) Here's the directory structure that I used. I added the `debug.sh` file to make it easier to run the debugger.\
 ![file structure](structure.png)
 
